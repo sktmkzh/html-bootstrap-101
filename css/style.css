@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+  transition: 0.5;
+}
+
+ul.headerlist {
+  margin: 0;
+  text-align: left;
+}
+
+#gnav-content {
+  width: 100%;
+  max-width: 240px;
+  box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+  transition: 0.5;
+}
+
+ul.gnav-list {
+  margin: 0;
+  background: #1b9aaa;
+  text-align: center;
+  height: 100vh;
+}
+
+ul.gnav-list li {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+}
+
+ul.gnav-list li::first-line {
+  font-size: 16px;
+  font-weight: bold;
+}

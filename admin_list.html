@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>layout</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Romanesco&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid m-0 d-flex bg-light">
+        <h2>〇〇システム</h2>
+        <div class="ms-auto align-self-center">
+          <p class="m-0">ユーザー（<a href="#">ログアウト</a>)</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2 p-0">
+            <div class="vh-100 bg-light">
+              <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                  <a href="#" class="nav-link link-dark">ホーム</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link link-dark">管理</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-10 p-4">
+            <div class="row">
+              <div class="d-flex p-0">
+                <h2>管理</h2>
+                <div class="ms-auto align-self-center">
+                  <a class="btn btn-primary" href="admin_add.html">新規登録</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">従業員番号</th>
+                    <th scope="col">名前（漢字・カナ）</th>
+                    <th scope="col">主となる店舗</th>
+                    <th scope="col">詳細</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>123456</td>
+                    <td>名前太郎</td>
+                    <td>札幌店</td>
+                    <td><a class="btn btn-secondary" href="#">詳細</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>123456</td>
+                    <td>名前太郎</td>
+                    <td>札幌店</td>
+                    <td><a class="btn btn-secondary" href="#">詳細</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>123456</td>
+                    <td>名前太郎</td>
+                    <td>札幌店</td>
+                    <td><a class="btn btn-secondary" href="#">詳細</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link"><</a></li>
+                <li class="page-item"><a class="page-link">1</a></li>
+                <li class="page-item"><a class="page-link">2</a></li>
+                <li class="page-item"><a class="page-link">3</a></li>
+                <li class="page-item"><a class="page-link">></a></li>
+              </ul>
+              <p>xx/xxx件</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- Load our React component. -->
+    <script src="js/like_button.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>

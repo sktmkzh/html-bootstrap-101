@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>layout</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Romanesco&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid m-0 d-flex bg-light">
+        <h2>〇〇システム</h2>
+        <div class="ms-auto align-self-center">
+          <p class="m-0">ユーザー（<a href="#">ログアウト</a>)</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2 p-0">
+            <div class="vh-100 bg-light">
+              <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                  <a href="#" class="nav-link link-dark">ホーム</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link link-dark">管理</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-10 p-4">
+            <div class="row">
+              <div class="container-fluid d-flex m-0 p-0">
+                <h2>登録・変更</h2>
+              </div>
+            </div>
+            <div class="row">
+              <form>
+                <label class="form-label" for="inpu1">名前(カナ)</label>
+                <input
+                  class="form-control form-control-md"
+                  id="input1"
+                  type="text"
+                  placeholder="XXXX"
+                />
+                <label class="form-label" for="inpu1">パスワード</label>
+                <input
+                  class="form-control form-control-md"
+                  id="input2"
+                  type="password"
+                  placeholder=""
+                />
+                <div class="d-flex my-5">
+                  <a class="me-auto btn btn-primary" href="#">登録</a>
+                  <a class="ms-auto btn btn-secondary" href="admin_list.html"
+                    >戻る</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- Load our React component. -->
+    <script src="js/like_button.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
